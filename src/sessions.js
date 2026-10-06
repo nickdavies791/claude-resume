@@ -181,7 +181,7 @@ export async function loadSessions() {
 function extractText(raw) {
   const parts = [];
   for (const line of raw.split('\n')) {
-    if (!line || (!line.includes('"type":"user"') && !line.includes('"type":"assistant"'))) continue;
+    if (!line || !/"type":\s*"(user|assistant)"/.test(line)) continue;
     let e;
     try { e = JSON.parse(line); } catch { continue; }
     if (e.isSidechain) continue;
