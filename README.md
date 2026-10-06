@@ -4,7 +4,7 @@ Search and resume [Claude Code](https://claude.com/claude-code) sessions from **
 
 `claude --resume` only lists sessions for the directory you're in. If you can't remember where you started a conversation, `cr` finds it, switches to the right directory and resumes it.
 
-![cr demo](demo/demo.gif)
+![cr demo](assets/demo.gif)
 
 ## Install
 
@@ -61,10 +61,6 @@ It only reads your transcripts; it never changes them. Metadata and a text-only 
 | `CLAUDE_CONFIG_DIR` | Where Claude Code keeps its data (default `~/.claude`) |
 | `CLAUDE_BIN` | The claude executable to run (default `claude`) |
 | `NO_COLOR` | Turn off colour |
-
-## Recording the demo
-
-`demo/record.sh` rebuilds `demo/demo.mp4` from made-up sessions, so no real transcripts appear. It needs [VHS](https://github.com/charmbracelet/vhs), ffmpeg and Pillow.
 
 ## Licence
 
