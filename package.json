@@ -1,0 +1,14 @@
+{
+  "name": "claude-resume",
+  "version": "0.1.0",
+  "description": "Search and resume Claude Code sessions from any directory",
+  "type": "module",
+  "bin": {
+    "cr": "bin/claude-resume.js",
+    "claude-resume": "bin/claude-resume.js"
+  },
+  "files": ["bin", "src"],
+  "engines": { "node": ">=18" },
+  "keywords": ["claude", "claude-code", "cli", "resume", "sessions"],
+  "license": "MIT"
+}
